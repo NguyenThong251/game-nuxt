@@ -1,0 +1,356 @@
+:root {
+  --Cardinality: 1.22;
+}
+.live-wrapper {
+  background: rgb(243, 246, 249);
+  width: 100%;
+  padding-bottom: calc(50px / var(--Cardinality));
+}
+.live-wrapper .re-bg {
+  /* background: url(../../static/img/repeat.e483f76c.png) repeat; */
+  background: url(/image/game/repeat.e483f76c.png) repeat;
+  width: 100%;
+  height: calc(305px / var(--Cardinality));
+}
+.live-wrapper .re-bg .live-header__bg {
+  height: calc(400px / var(--Cardinality));
+  margin: 0px auto;
+  background: url(/image/casino/banner.8a027e69.png) 50% / cover no-repeat;
+  max-width: 1920px;
+}
+.live-wrapper .live-main {
+  width: calc(1400px / var(--Cardinality));
+  min-height: calc(1100 / var(--Cardinality));
+  background: rgb(255, 255, 255);
+  box-shadow: rgba(88, 101, 127, 0.1) 0px 6px 16px 0px;
+  border-radius: 12px;
+  margin: 0px auto;
+  position: relative;
+  top: calc(-17px / var(--Cardinality));
+  padding: calc(44px / var(--Cardinality)) 0;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.live-wrapper .live-main ul {
+  display: flex;
+  flex-wrap: wrap;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  padding: 0 calc(88px / var(--Cardinality));
+}
+.live-wrapper .live-main ul li {
+  width: calc(380px / var(--Cardinality));
+  height: calc(240px / var(--Cardinality));
+  background: rgb(255, 255, 255);
+  margin-top: calc(60px / var(--Cardinality));
+  transition: 0.3s;
+  position: relative;
+  top: 0px;
+  cursor: pointer;
+  list-style: none;
+  max-width: 32%;
+}
+.live-wrapper .live-main ul li .one {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+.live-wrapper .live-main ul li .three {
+  width: calc(380px / var(--Cardinality));
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  animation: 0.6s ease 0s 1 normal forwards running actThree-data-v-7258b5eb-data-v-5f0aeb7a;
+}
+.live-wrapper .live-main ul li .four {
+  width: calc(240px / var(--Cardinality));
+  position: absolute;
+  z-index: 1;
+  animation: 0.6s ease 0s 1 normal forwards running actOne-data-v-7258b5eb-data-v-5f0aeb7a;
+}
+.live-wrapper .live-main ul li .live_brand {
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+  z-index: 2;
+  position: absolute;
+  margin-left: 22px;
+}
+.live-wrapper .live-main ul li .live_brand img {
+  width: calc(120px / var(--Cardinality));
+}
+.live-wrapper .live-main ul li .live_brand span {
+  width: 170px;
+  text-align: center;
+  font-size: 16px;
+  font-family: PingFangSC-Medium, "PingFang SC";
+  font-weight: 500;
+  color: rgb(71, 79, 91);
+  margin-bottom: 10px;
+}
+.live-wrapper .live-main ul li .live_brand .game {
+  display: inherit;
+  cursor: pointer;
+}
+.live-wrapper .live-main ul li .live_brand .game .open-game {
+  width: calc(120px / var(--Cardinality));
+  height: calc(40px / var(--Cardinality));
+  line-height: calc(40px / var(--Cardinality));
+  text-align: center;
+  border-radius: 4px;
+  border: 1px solid rgb(212, 215, 218);
+  margin-right: 8px;
+  font-size: calc(14px / var(--Cardinality));
+  font-family: PingFangSC-Medium, "PingFang SC";
+  font-weight: 500;
+  color: rgb(96, 135, 212);
+  box-sizing: border-box;
+}
+.live-wrapper .live-main ul li .live_brand .game .star {
+  width: calc(40px / var(--Cardinality));
+  height: calc(40px / var(--Cardinality));
+  border-radius: 4px;
+  position: relative;
+  box-sizing: border-box;
+  background: rgb(212, 219, 232);
+}
+.live-wrapper .live-main ul li .live_brand .game .star img {
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.live-wrapper .live-main ul::after {
+  content: "";
+  width: calc(380px / var(--Cardinality));
+}
+.live-wrapper .live-main ul li:hover {
+  top: -10px;
+  box-shadow: rgb(177, 195, 224) 0px 22px 20px -22px;
+}
+@media (max-width: 1023px) {
+  .live-wrapper {
+    padding-bottom: 0;
+  }
+  
+  .live-wrapper.router-view {
+    overflow: hidden;
+  }
+  .live-wrapper .live-main {
+    width: auto;
+    max-width: 100%;
+    background-color: transparent;
+    box-shadow: none;
+    padding: 0 20px;
+
+  }
+  .live-wrapper .live-main ul {
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: auto;
+    max-width: 100%;
+    margin: 20px 0 20px;
+  }
+  .live-wrapper .live-main ul li {
+    width: calc(50% - 10px);
+    max-width: 100%;
+    margin-right: 20px;    
+    margin-top: 20px;
+    height: auto;
+  }
+
+  .live-wrapper .live-main ul li:nth-child(2n) {
+    margin-right: 0;
+  }
+
+  .live-wrapper .re-bg .live-header__bg {
+    height: 100px;
+  }
+  .live-wrapper .re-bg {
+    height: 0;
+  }
+  .live-wrapper .live-main {
+    padding: 0 20px;
+  }
+
+  .live-wrapper .live-main ul li {
+    background: transparent;
+  }  
+}
+
+/* mobile */
+
+.gameNavCover-items {
+  display: block;
+  width: 100%;  
+}
+
+.gameNavCover-cover {
+  background: linear-gradient(#fff, #edf7ff);
+  background-size: 100% 100%;
+  border-radius: 4px;
+  position: relative;
+  padding-top: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.van-image__error,
+.van-image__img,
+.van-image__loading {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.van-image__error,
+.van-image__img,
+.van-image__loading {
+  object-fit: contain;
+  margin: 0 auto;
+}
+
+.gameNavCover-name {
+  color: #7279a2;
+  font-size: 13px;
+  line-height: 1.5;
+  /* margin-top: 5px; */
+}
+
+.gameNavCover-tag {
+  position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 12px;
+    color: #fff;
+    background: rgba(0, 0, 0, .25);
+    border-radius: 2px;
+    padding: 5px;
+}
+
+
+/* fix */
+
+/* pc */
+
+.list-item{
+  /* width: 311px; */
+  width: 100%;
+  height: 197px;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 1;
+  padding: 6%;
+}
+.list-item .list-item-bg{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.list-item .list-item-bg img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.list-item .list-item-ttl{
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+  text-shadow: 0 0 10px rgba(0,0,0,.5);
+}
+.list-item .list-item-box{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background: rgba(0,0,0,.4);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  opacity: 0;
+  visibility: hidden;
+}
+.list-item .button-click{
+  animation: sliderY .6s forwards;
+  background: #fff;
+  border-radius: 20px;
+  color: #26272a;
+  font-size: calc(16px / var(--Cardinality));
+  height: calc(40px / var(--Cardinality));
+  line-height: calc(40px / var(--Cardinality));
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  top: calc(-40px / var(--Cardinality));
+  transition: all .3s ease;
+  width: calc(120px / var(--Cardinality));
+  font-weight: 500;
+}
+.list-item .button-click:hover{
+  opacity: 1 !important;
+  background: #5987de;
+  color: #fff;
+}
+.list-item .sc{
+  border: 1px solid #fff;
+    border-radius: 20px;
+    bottom: calc(-40px / var(--Cardinality));
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    font-size: calc(16px / var(--Cardinality));
+    height: calc(40px / var(--Cardinality));
+    line-height: calc(40px / var(--Cardinality));
+    margin-top: calc(12px / var(--Cardinality));
+    position: relative;
+    text-align: center;
+    transition: all .3s ease;
+}
+.list-item .sc img{
+  height: calc(16px / var(--Cardinality));
+  position: relative;
+  top: -1px;
+  margin-right: 2px;
+  width: calc(16px / var(--Cardinality));
+}
+.list-item .sc:hover{
+  border-color: #5987de;
+  color: #fff;
+  background: #5987de;
+}
+
+.list-item:hover .list-item-box{
+  opacity: 1;
+  visibility: visible;
+}
+.list-item:hover .list-item-box {
+  align-items: center;
+}
+.list-item:hover .list-item-box .button-click{
+  top: 0px;
+}
+.list-item:hover .list-item-box .sc{
+  bottom: 0px;
+}
+
+.live-wrapper .live-main ul li:hover{
+  top: unset;
+  box-shadow: none;
+}

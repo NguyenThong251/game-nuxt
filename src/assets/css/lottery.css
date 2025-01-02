@@ -1,0 +1,175 @@
+:root {
+    --Cardinality: 1.22;
+}
+.lottery-wrapper {
+    background: rgb(243, 246, 249);
+    width: 100%;
+    padding-bottom: calc(50px / var(--Cardinality));
+}
+.lottery-wrapper .re-bg {
+    background: url(/image/Lottery/repeat.e483f76c.png) repeat;
+    width: 100%;
+    height: calc(305px / var(--Cardinality));
+}
+.lottery-wrapper .re-bg .lottery-header__bg {
+    height: calc(400px / var(--Cardinality));
+    margin: 0px auto;
+    background: url(/image/Lottery/banner.417fe495.png) 50% center / cover no-repeat;
+    max-width: 1920px;
+}
+.lottery-wrapper .lottery-main {
+    width: calc(1400px / var(--Cardinality));
+    max-width: 100%;
+    min-height: calc(1100px / var(--Cardinality));
+    background: rgb(255, 255, 255);
+    box-shadow: rgba(88, 101, 127, 0.1) 0px 6px 16px 0px;
+    border-radius: 12px;
+    margin: -10px auto 0px;
+    box-sizing: border-box;
+}
+.lottery-wrapper .lottery-main .lottery-bo {
+    max-width: 100%;
+    width: 100%;
+}
+.lottery-wrapper .lottery-main .lottery-bo .lottery-center {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+}
+.lottery-wrapper .lottery-main .lottery-bo .lottery-center .sm-common {
+    position: relative;
+    animation: 0.6s ease 0s 1 normal forwards running actText;
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+}
+.lottery-wrapper .lottery-main .lottery-bo .lottery-center .sm-common li {
+    display: flex;
+    position: relative;
+    padding-top: calc(65px / var(--Cardinality));
+    width: auto;
+    list-style-type: none;
+    flex-wrap: wrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    padding-left: 20px;
+    padding-right: 20px;
+    max-width: 100%;
+}
+.lottery-wrapper .lottery-main .lottery-bo .lottery-center .sm-common li .gwc {
+    
+}
+.lottery-wrapper .lottery-main .lottery-bo .lottery-center .sm-common li .title {
+    font-size: calc(22px / var(--Cardinality));
+    font-weight: 600;
+    color: rgb(52, 52, 52);
+    display: block;
+    position: absolute;
+    left: calc(18px / var(--Cardinality));
+    top: calc(20px / var(--Cardinality));
+    margin-left: 50px;
+}
+.lottery-wrapper .lottery-main .lottery-bo .lottery-center .sm-common li .title::before {
+    position: absolute;
+    content: "";
+    top: 0px;
+    left: -15px;
+    width: 4px;
+    height: 22px;
+    background: rgb(56, 145, 243);
+    border-radius: 2px;
+}
+.lottery-wrapper .lottery-main .lottery-bo .lottery-center .sm-common li .gwc {
+    margin: 0px 20px 35px 0px !important;
+    position: relative;
+    top: 0px;
+    transition: 0.3s;
+    width: calc((100% - 80px) / 5);
+}
+.lottery-wrapper .lottery-main .lottery-bo .lottery-center .sm-common li .gwc:nth-child(5n) {
+    margin-right: 0 !important;
+}
+.lottery-wrapper .lottery-main .lottery-bo .lottery-center .sm-common li .gwc .games {
+    width: 100%;
+    height: auto;
+    -webkit-box-align: center;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+}
+.lottery-wrapper .lottery-main .lottery-bo .lottery-center .sm-common li .gwc:hover {
+    top: -10px;
+}
+.lottery-wrapper .lottery-main .lottery-bo .lottery-center .sm-common li .gwc .games .avtior {
+    position: relative;
+    border-radius: 50%;
+    width: 100%;
+    height: auto;
+}
+.lottery-wrapper .lottery-main .lottery-bo .lottery-center .sm-common li .gwc .games .avtior img {
+    width: 100%;
+    height: auto;
+}
+.lottery-wrapper .lottery-main .lottery-bo .lottery-center .sm-common li .gwc .games .name span:first-child {
+    font-size: calc(18px / var(--Cardinality));
+    font-weight: 500;
+    color: rgb(52, 52, 52);
+    word-break: break-all;
+    line-height: 1;
+}
+.lottery-wrapper .lottery-main .lottery-bo .lottery-center .sm-common li .gwc .games .name span {
+    display: block;
+    width: 100%;
+    line-height: 1.1;
+    text-align: center;
+    margin-top: 5px;
+}
+@media (max-width: 1023px) { 
+    .lottery-wrapper {
+        background: rgb(243, 246, 249);
+        width: 100%;
+        padding-bottom: calc(50px / var(--Cardinality));
+        overflow: hidden;
+        max-width: 100%;
+    }
+    .lottery-wrapper .re-bg {
+        height: 130px;
+    }
+    .lottery-wrapper .re-bg .lottery-header__bg {
+        height: 100px;
+    }
+    .lottery-wrapper .lottery-main {
+        width: 100%;
+    }
+    .lottery-wrapper .lottery-main .lottery-bo .lottery-center .sm-common li .gwc {
+        width: 45%;
+    }
+    .lottery-wrapper .lottery-main .lottery-bo .lottery-center .sm-common li {
+        justify-content: unset;
+    }
+    .lottery-wrapper .lottery-main .lottery-bo .lottery-center .sm-common li .title {
+        left: 30%;
+    }
+    .lottery-wrapper .lottery-main .lottery-bo .lottery-center .sm-common li .gwc:nth-child(2n) {
+        margin-left: 15px;
+    }
+    .row-game.sp .gameNavCover-items .gameNavCover-cover {
+        background: unset;
+        background-size: unset;
+    }
+    .row-game.sp .gameNavCover-items .gameNavCover-name {
+        color: #333;
+        font-size: 16px;
+        line-height: 1.5;
+        margin-top: 5px;
+        text-align: center;
+        font-weight: 500;
+    }
+    .row-game.sp .gameNavCover-items .gameNavCover-cover {
+        padding-top: 70%;
+    }
+
+}

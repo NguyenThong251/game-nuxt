@@ -1,0 +1,502 @@
+:root {
+    --Cardinality: 1.22;
+}
+.fish-game-wrapper {
+    background-color: #f3f6f9;
+    padding-bottom: 80px;
+}
+.router-view {
+    background: #eff5fb;
+}
+.fish-game-wrapper .re-bg {
+    background-image: var(--bg01);
+    width: 100%;
+    height: calc(305px / var(--Cardinality));
+}
+.fish-game-wrapper .re-bg .promotions-header__bg {
+    height: calc(400px / var(--Cardinality));
+    margin: 0 auto;
+    background: url(/image/fish/banner.ac4e7cea.png) 50% / cover no-repeat;
+    max-width: 1920px;
+}
+.fish-game-wrapper .re-bg-one {
+    height: calc(700px / var(--Cardinality));
+    margin: 0 auto;
+    margin-top: calc(90px / var(--Cardinality));
+    background: url(/image/fish/banner1.9c22be9d.png) 50% / cover no-repeat;
+    max-width: 1920px;
+}
+.fish-game-wrapper .fish-game-main {
+    width: calc(1400px / var(--Cardinality));
+    max-width: 100%;  
+    background: #fff;
+    -webkit-box-shadow: 0 6px 16px 0 rgba(88, 101, 127, .1);
+    box-shadow: 0 6px 16px 0 rgba(88, 101, 127, .1);
+    border-radius: 12px;
+    margin: calc(-835px / var(--Cardinality)) auto 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0 30px;
+    position: relative;
+    /* font-family: PingFangSC-Medium, PingFang SC; */
+}
+.fish-game-wrapper .fish-game-main .game-content-list {
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+    position: relative;
+    border-radius: 0 12px 12px 0;
+}
+
+.fish-game-wrapper .fish-game-main .el-container-wrap .ele_container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: calc(206px / var(--Cardinality));
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border-radius: 12px 0 0 12px;
+    background: #f4f7fa;
+}
+.fish-game-wrapper .fish-game-main .game-tab-content {
+    margin-bottom: 30px;
+    max-width: 32%;
+}
+.fish-game-wrapper .fish-game-main .el-container-wrap .game-content-list .game-type-tab {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: calc(109px / var(--Cardinality));
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0 calc(35px / var(--Cardinality));
+}
+.fish-game-wrapper .fish-game-main .el-container-wrap .game-content-list .game-tab-wrapper {
+    -ms-scroll-chaining: none;
+    overscroll-behavior: contain;
+    min-height: calc(500px / var(--Cardinality));
+    padding-top: 60px;
+}
+.fish-game-wrapper .fish-game-main .el-container-wrap .game-content-list .more {
+    width: calc(139px / var(--Cardinality));
+    height: calc(46px / var(--Cardinality));
+    line-height: calc(46px / var(--Cardinality));
+    color: #959aa5;
+    text-align: center;
+    font-size: calc(16px / var(--Cardinality));
+    border-radius: 23px;
+    border: 1px solid #e0e2e3;
+    position: relative;
+    bottom: 0;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    margin: 30px 0;
+    cursor: pointer;
+}
+.fish-game-wrapper .fish-game-main .el-container-wrap .ele_wrap {
+    height: 100%;
+    padding-top: calc(28px / var(--Cardinality));
+}
+.fish-game-wrapper .fish-game-main .el-container-wrap .ele_wrap .ele-item.active {
+    color: #fff;
+    background: linear-gradient(90deg, #97d2fe, #2a87f1);
+    -webkit-box-shadow: 0 3px 17px 0 rgba(80, 149, 255, .24);
+    box-shadow: 0 3px 17px 0 rgba(80, 149, 255, .24);
+}
+.fish-game-wrapper .fish-game-main .el-container-wrap .ele_wrap .ele-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-size: calc(16px / var(--Cardinality));
+    cursor: pointer;
+    width: calc(170px / var(--Cardinality));
+    height: calc(50px / var(--Cardinality));
+    color: var(--ele-default-color);
+    border-radius: 26px;
+    margin-top: calc(10px / var(--Cardinality));
+}
+.fish-game-wrapper .fish-game-main .el-container-wrap .ele_wrap .ele-item.active .l-icon {
+    background: transparent;
+}
+.fish-game-wrapper .fish-game-main .el-container-wrap .ele_wrap .ele-item .l-icon {
+    width: 30px;
+    height: 30px;
+    background: linear-gradient(180deg, #92d3ff, #4fabff);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    border-radius: 5px;
+    padding: 4px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0 calc(13px / var(--Cardinality)) 0 calc(27px / var(--Cardinality));
+}
+.fish-game-wrapper .fish-game-main .el-container-wrap .ele_wrap .ele-item .l-icon img {
+    width: 100%;
+}
+.fish-game-wrapper .fish-game-main .el-container-wrap .game-content-list .game-type-tab .active {
+    border: 1px solid #d9e1ec;
+    background: none;
+}
+.fish-game-wrapper .fish-game-main .el-container-wrap .game-content-list .game-type-tab .l-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: calc(34px / var(--Cardinality));
+    line-height: calc(34px / var(--Cardinality));
+    padding: 0 calc(26px / var(--Cardinality));
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    font-size: calc(16px / var(--Cardinality));
+    border-radius: 17px;
+    cursor: pointer;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.fish-game-wrapper .fish-game-main .el-container-wrap .game-content-list .game-type-tab .l-list img {
+    width: 15px;
+    height: 15px;
+    margin-right: 6px;
+}
+.fish-game-wrapper .fish-game-main .el-container-wrap .game-content-list .game-type-tab .active span {
+    color: #3991f2;
+}
+.fish-game-wrapper .fish-game-main .el-container-wrap .game-content-list .game-type-tab .l-list span {
+    display: inline-block;
+}
+.fish-game-wrapper .fish-game-main .el-container-wrap .game-content-list .game-type-tab .l_two {
+    margin-left: 8px;
+    border: none;
+}
+.fish-game-wrapper .fish-game-main .el-container-wrap .game-content-list .game-type-tab .l_two img {
+    width: 18px;
+    height: 18px;
+    margin-right: 5px;
+}
+.fish-game-wrapper .fish-game-main .el-container-wrap .game-content-list .game-type-tab .search-box {
+    position: relative;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: auto;
+}
+.fish-game-wrapper .fish-game-main .el-container-wrap .game-content-list .game-type-tab .search-box .r-search {
+    width: calc(360px / var(--Cardinality));
+    height: calc(50px / var(--Cardinality));
+    background: #fff;
+    border: 1px solid #d8dde3;
+    border-radius: 8px;
+    font-size: calc(16px / var(--Cardinality));
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding-left: calc(52px / var(--Cardinality));
+}
+.fish-game-wrapper .fish-game-main .el-container-wrap .game-content-list .game-type-tab .search-box .fas {
+    position: absolute;
+    left: calc(30px / var(--Cardinality));
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    color: #dadada;
+    font-size: calc(18px / var(--Cardinality));
+    cursor: pointer;
+}
+.el-icon-search:before {
+    content: "\e778";
+}
+.fish-game-wrapper .fish-game-main .el-container-wrap .game-content-list .game-tab-wrapper .game-tab-content .collect {
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, .4);
+    width: calc(400px / var(--Cardinality));
+    max-width: 100%;
+    height: calc(200px / var(--Cardinality));
+    border-radius: 6px;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+    cursor: pointer;
+    z-index: 1;
+}
+.fish-game-wrapper .fish-game-main .el-container-wrap .game-content-list .game-tab-wrapper .game-tab-content .collect .group {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+.fish-game-wrapper .fish-game-main .el-container-wrap .game-content-list .game-tab-wrapper .game-tab-content .collect .group a {
+    width: calc(120px / var(--Cardinality));
+    height: calc(40px / var(--Cardinality));
+    line-height: calc(40px / var(--Cardinality));
+    background: #ffffff;
+    border-radius: 20px;
+    color: #26272a;
+    font-size: calc(16px / var(--Cardinality));
+    margin-top: calc(40px / var(--Cardinality));
+    text-align: center;
+    -webkit-animation: sliderY .6s forwards;
+    animation: sliderY .6s forwards;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+    position: relative;
+    top: calc(-40px / var(--Cardinality));
+     text-decoration: none;
+}
+.fish-game-wrapper .fish-game-main .el-container-wrap .game-content-list .game-tab-wrapper .game-tab-content .collect .group .sc {
+    color: #fff;
+    width: calc(120px / var(--Cardinality));
+    height: calc(40px / var(--Cardinality));
+    border-radius: 20px;
+    border: 1px solid #fff;
+    line-height: calc(40px / var(--Cardinality));
+    font-size: calc(16px / var(--Cardinality));
+    margin-top: calc(12px / var(--Cardinality));
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    text-align: center;
+    cursor: pointer;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+    position: relative;
+    bottom: calc(-40px / var(--Cardinality));
+}
+.fish-game-wrapper .fish-game-main .el-container-wrap .game-content-list .game-tab-wrapper .game-tab-content .collect .group .sc img {
+    width: calc(16px / var(--Cardinality));
+    height: calc(16px / var(--Cardinality));
+    vertical-align: inherit;
+    margin-right: 4px;
+    position: relative;
+    top: 1px;
+}
+.fish-game-wrapper .fish-game-main .el-container-wrap .game-content-list .game-tab-wrapper .game-tab-content .tp {
+    width: calc(400px / var(--Cardinality));
+    max-width: 100%;
+    height: calc(200px / var(--Cardinality));
+    border-radius: 6px;
+    -webkit-box-shadow: 0 5px 14px 0 rgba(31, 92, 182, .08);
+    box-shadow: 0 5px 14px 0 rgba(31, 92, 182, .08);
+    overflow: hidden;
+    cursor: pointer;
+}
+.fish-game-wrapper .el-image {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+}
+.fish-game-wrapper .fish-game-main .el-container-wrap .game-content-list .game-tab-wrapper .game-tab-content .tp img {
+    width: 100%;
+    height: 100%;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+}
+.fish-game-wrapper .el-image__inner {
+    vertical-align: top;
+}
+.fish-game-wrapper .fish-game-main .el-container-wrap .game-content-list .game-tab-wrapper .game-tab-content .one {
+    color: #26272a;
+    font-size: calc(17px / var(--Cardinality));
+    margin-top: calc(10px / var(--Cardinality));
+    line-height: calc(24px / var(--Cardinality));
+    text-align: left;
+    position: relative;
+    display: block;
+}
+.fish-game-wrapper .fish-game-main .el-container-wrap .game-content-list .game-tab-wrapper .game-tab-content .one p {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    display: inline-block;
+    margin: 0;
+}
+.fish-game-wrapper .fish-game-main .el-container-wrap .game-content-list .game-tab-wrapper .game-tab-content .two {
+    color: #959aa5;
+    font-size: calc(15px / var(--Cardinality));
+    margin-bottom: calc(36px / var(--Cardinality));
+    line-height: calc(21px / var(--Cardinality));
+    text-align: left;
+}
+.fish-game-wrapper .fish-game-main .el-container-wrap .game-content-list .game-tab-wrapper .game-tab-content .collect:hover {
+    opacity: 1;
+}
+.fish-game-wrapper .fish-game-main .el-container-wrap .game-content-list .game-tab-wrapper .game-tab-content .collect:hover .group a {
+    top: 0;
+}
+.fish-game-wrapper .fish-game-main .el-container-wrap .game-content-list .game-tab-wrapper .game-tab-content .collect .group a:hover {
+  opacity: 1 !important;
+  background: #5987de;
+  color: #fff;
+}
+.fish-game-wrapper .fish-game-main .el-container-wrap .game-content-list .game-tab-wrapper .game-tab-content .collect .group .sc:hover {
+    background:  #4cacff;
+    border: 1px solid  #4cacff;
+}
+.fish-game-wrapper .fish-game-main .el-container-wrap .game-content-list .game-tab-wrapper .game-tab-content .collect:hover .group .sc {
+    bottom: 0;
+}
+.fish-game-wrapper .fish-game-main .el-container-wrap .game-content-list .game-tab-wrapper .game-tab-content .two {
+    margin: 0;
+}
+.fish-game-wrapper .fish-game-main .el-container-wrap .game-content-list .game-type-tab .active {
+    border: 1px solid #d9e1ec;
+    background: none;
+}
+.fish-game-wrapper .search-box i.fas {
+    font-family: "Font Awesome 6 Free" !important;
+}
+/*====================*/
+.fish-game-wrapper .content {
+    flex-grow: 1;
+    display: none;
+}
+.fish-game-wrapper .content.active {
+    display: block;
+}
+.fish-game-wrapper .sub-tabs {
+    display: flex;
+}
+.fish-game-wrapper .sub-tab.active {
+    background-color: #d0d0d0;
+}
+.fish-game-wrapper .sub-content {
+    display: none;
+}
+.fish-game-wrapper .sub-content.active {
+    display: block;
+}
+.fish-game-wrapper div.game-sub-tab-content {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0 calc(35px / var(--Cardinality));
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+.fish-game-wrapper div.game-sub-tab-content:after {
+    content: "";
+    width: calc(400px / var(--Cardinality));
+    max-width: 100%;
+}
+.fish-game-wrapper .fish-game-main .game-content-list .game-tab-wrapper .game-sub-tab-content .el-brand-item {
+    position: relative;
+}
+@media (max-width: 1023px) { 
+    .fish-game-wrapper .re-bg .promotions-header__bg {
+        height: 100px;
+    }
+    .fish-game-wrapper .re-bg {
+        height: 120px;
+    }
+    .fish-game-wrapper .fish-game-main {
+        width: 100%;
+        max-width: 100%;
+        overflow: hidden;
+        padding: 0 10px;
+    }
+    .fish-game-wrapper .fish-game-main .el-container-wrap .game-content-list .game-type-tab {
+        padding: 0;
+        max-width: 100%;
+        width: 100%;
+    }
+    .fish-game-wrapper div.game-sub-tab-content {
+        padding: 0;
+        width: 100%;
+        max-width: 100%;
+        justify-content: space-around;
+    }
+    .fish-game-wrapper .fish-game-main .game-tab-content {
+        margin-bottom: 20px;
+    }
+    .fish-game-wrapper .fish-game-main .el-board-wrapper .el-board-wrapper__content .el-container-wrap .game-content-list {
+        width: 100%;
+        max-width: 100%;
+        margin-top: 20px;
+    }
+    .fish-game-wrapper .fish-game-main .el-container-wrap .game-content-list .game-type-tab {
+        padding: 0 5px;
+        display: flex;
+        width: 100%;
+        flex-direction: column-reverse;
+    }
+    .fish-game-wrapper .fish-game-main .sub-tabs {
+        width: 100%;
+    }
+    .fish-game-wrapper .fish-game-main .game-content-list .game-type-tab .l-list {
+        padding: 0 5px;
+        width: 50%;
+    }
+    .fish-game-wrapper .fish-game-main .game-content-list .game-type-tab .l-list img {
+        width: 10px;
+        height: 10px;
+        margin-right: 5px;
+    }
+    .fish-game-wrapper .fish-game-main .game-content-list .game-type-tab .l-list span {
+        display: inline-block;
+        font-size: 12px;
+    }
+    .fish-game-wrapper .fish-game-main .game-content-list .game-type-tab .l_two {
+        width: 50%;
+        padding: 0 5px;
+    }
+    .fish-game-wrapper .fish-game-main .game-content-list .game-type-tab .search-box {
+        margin-top: 15px;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .fish-game-wrapper .fish-game-main .el-container-wrap .game-content-list .game-tab-wrapper {
+        margin-top: 30px;
+    }
+    .fish-game-wrapper .fish-game-main .el-container-wrap .game-content-list .game-type-tab .search-box .r-search {
+        width: 100%;
+    }
+    .fish-game-wrapper .fish-game-main .el-container-wrap .game-content-list .game-type-tab .l-list {
+        height: calc(34px / var(--Cardinality));
+    }
+}

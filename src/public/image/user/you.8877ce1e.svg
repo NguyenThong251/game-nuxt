@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="12px" viewBox="0 0 12 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 61 (89581) - https://sketch.com -->
+    <title>icon_箭头右@1x</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="12" height="12"></rect>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="我的收藏" transform="translate(-1507.000000, -655.000000)">
+            <g id="icon_箭头右备份-2" transform="translate(1507.000000, 655.000000)">
+                <g id="icon_箭头右">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <g id="蒙版"></g>
+                    <polyline id="形状备份-2" stroke="#999999" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" mask="url(#mask-2)" transform="translate(4.000000, 6.000000) rotate(-45.000000) translate(-4.000000, -6.000000) " points="7 3 7 9 1 9"></polyline>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

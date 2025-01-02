@@ -1,0 +1,296 @@
+.ticket-history-wrapper .ele-item {
+  width: 47%;
+  text-align: center;
+  margin: 0 5px;
+}
+.ticket-history-wrapper .ele_wrap {
+  display: flex;
+  width: auto;
+  flex-wrap: wrap;
+  margin: 0 10px;
+  max-width: 100%;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+button.takein-money.active {
+  width: 100%;
+  padding: 9px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 14px;
+  border-radius: 6px;
+  border: 1px solid #4290ff;
+  background: #4290ff;
+}
+button.takeout-money {
+  width: 100%;
+  padding: 9px;
+  color: #8a8d96;
+  font-weight: bold;
+  font-size: 14px;
+  border-radius: 6px;
+  border: 1px solid #fff;
+  background: #fff;
+}
+button.takeout-money.active {
+  width: 100%;
+  padding: 9px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 14px;
+  border-radius: 6px;
+  border: 1px solid #4290ff;
+  background: #4290ff;
+}
+button.takein-money {
+  width: 100%;
+  padding: 9px;
+  color: #8a8d96;
+  font-weight: bold;
+  font-size: 14px;
+  border-radius: 6px;
+  border: 1px solid #fff;
+  background: #fff;
+}
+.ticket-history-list {
+  margin-top: 20px;
+  margin-bottom: 100px;
+}
+.ticket-history-list .sub-tabs {
+  display: flex;
+  width: fit-content;
+  margin: 0;
+  background: white;
+  padding: 12px 20px;
+}
+.ticket-history-list .sub-tab.l-list {
+  text-align: center;
+  font-size: 14px;
+  margin: 0 5px;
+  color: #8a8d96;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: max-content;
+}
+.ticket-history-list .sub-tab.is-active {
+  color: #4290ff;
+  font-weight: bold;
+}
+
+.all-sub-content {
+  display: none;
+  margin-top: 20px;
+}
+.del-all-trans {
+  text-align: center;
+  margin: 10px 0;
+}
+button.btn-del-all-trans {
+  width: calc(100% - 20px);
+  color: #fff;
+  font-weight: bold;
+  font-size: 14px;
+  border-radius: 6px;
+  border: 1px solid #4290ff;
+  background: #4290ff;
+  height: 45px;
+}
+.sc-esYiGF.dWrirS.tx-item {
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin: 0 10px;
+  padding: 20px;
+  margin-top: 10px;
+  background: #fff;
+}
+.row-user-history .list-sub-tab {
+  background: #fff;
+  padding: 12px 0;
+  margin: 0 10px;
+  overflow: auto;
+}
+span.ion-color-trans {
+  color: #4290ff;
+  font-size: 14px;
+  text-align: right;
+  width: 40%;
+}
+.sc-ion-label-trans p, .sc-label-trans p {
+  color: rgba(var(--ion-text-color-rgb, 0, 0, 0), 0.4);
+  font-size: 14px;
+}
+p .status-text-trans {
+  color: #ec1a23;
+  font-size: 14px;
+}
+.tx-header-trans {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+label.sc-ion-label-trans {
+  width: 60%;
+}
+.tx-info-trans {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  margin-top: 15px;
+}
+label.sc-label-trans {
+  width: 80%;
+}
+.sc-img-trans {
+  width: 20%;
+}
+.sc-img-trans img {
+  height: auto;
+  width: 50px;
+}
+p .sucess-text-trans {
+  color: #2dd36f;
+}
+p.note {
+  font-size: 14px;
+  padding: 2px 3px;
+  overflow: hidden;
+  white-space: normal;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  background-color: #9a9797;
+  color: var(--ion-color-medium-contrast);
+  border-radius: 4px;
+}
+p.no-data {
+  text-align: center;
+  margin: 0 10px;
+  color: #92949c;
+}
+.sc-essYiGF.dWrirrS.txx-item {
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin: 0 10px;
+  padding: 20px;
+  margin-top: 10px;
+  background: #fff;
+}
+.tx-header-balance {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.tx-info-balance {
+  width: 100%;
+  margin-top: 15px;
+  text-align: right;
+}
+.tx-info-balance p {
+  color: #8a8d96;
+  font-size: 12px;
+}
+.tx-info-balance p .balance-pre {
+  color: #2dd36f;
+  font-size: 14px;
+  font-weight: bold;
+}
+.balance-succ {
+  color: #2dd36f;
+  font-size: 14px;
+  font-weight: bold;
+}
+.header-balance {
+  width: 60%;
+}
+span.balance-succ {
+  width: 40%;
+  text-align: right;
+}
+.balance-time {
+  color: #8a8d96;
+  font-size: 12px;
+  margin-top: 5px;
+}
+.balance-title {
+  font-size: 14px;
+}
+.balance-takeout {
+  width: 40%;
+  text-align: right;
+  font-size: 14px;
+  font-weight: bold;
+  color: #ec1a23;
+}
+.detail-balance-list a,
+.detail-balance-list span {
+  color: #8a8d96;
+  font-size: 12px;
+}
+.detail-balance-list {
+  text-align: right;
+  margin-top: 15px;
+}
+
+/* page list */
+.ticket-history-detail .row-user-history{
+  max-width: 450px;
+  margin: 0 auto;
+  min-height: 100vh;
+}
+
+.betHis-item{
+  padding: 0 10px;
+  margin-top: 15px;
+  background: #fff;
+  font-size: 14px;
+}
+.betHis-header{
+  padding: 10px 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+}
+.betHis-name{
+  font-weight: bold;
+  margin-right: auto;
+}
+.betHis-more{
+  padding: 5px 10px;
+  border-radius: 3px;
+  color: #fff;
+  font-size: 12px;
+  background: var(--herder-top);
+  display: block;
+}
+.betHis-content{
+  font-size: 12px;
+}
+.betHis-content .betHis-info{
+  padding: 5px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.betHis-content .betHis-info > li{
+  margin: 7px 0;
+  width: 49%;
+}
+.betHis-content .betHis-info > li:nth-child(1){
+  width: 100%;
+}
+.betHis-content .betHis-info-cap{
+  color: #8a8d96;
+  margin-right: 5px;
+}
+.betHis-list .betDetail-result {
+  margin: 0 10px;
+}
+.betHis-list .betDetail-result.--dice .betDetail-result-item {
+  width: 25px;
+}
+.betHis-list .betDetail-result.--coin .betDetail-result-item {
+  width: 20px;
+}

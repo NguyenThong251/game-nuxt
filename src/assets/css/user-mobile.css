@@ -1,0 +1,234 @@
+.child-view {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    bottom: 0;
+    right: 0;
+    background: #f5f6f7;
+    z-index: 10;
+}
+.personal {
+    background: #eef3f8;
+    height: 100%;
+}
+.personalMain {
+    height: auto;
+    background: url(/image/user/personal_bg.png) no-repeat;
+    background-size: 100% 100%;
+    color: #3c4045;
+}
+#user_loggin .main {
+    padding-bottom: 100px;
+    padding-top: 0;
+}
+.personalMain-user {
+    padding: 25px;
+    position: relative;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.personalMain-user, .personalMain-wallet {
+    height: 50%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+.avatar-lg {
+    width: 60px;
+    height: 60px;
+}
+.avatar {
+    border-radius: 50%;
+    background: #fff;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+.avatar img {
+    width: 58px;
+    height: 58px;
+}
+.personalMain-info {
+    -webkit-box-flex: 1;
+    flex: 1;
+    font-size: 14px;
+    margin-left: 10px;
+}
+.personalMain-info h5 {
+    font-size: 18px;
+    height: 25px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    margin-bottom: 5px;
+}
+.level {
+    width: 31px;
+    height: 14px;
+    background: url(/image/user/bgsvip.png) no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 16px;
+}
+.level img {
+    width: 16px;
+    height: 6px;
+    margin-right: 2px;
+}
+.level p {
+    font-size: 13px;
+}
+.setting-icon {
+    width: 21px;
+    height: 20px;
+    position: absolute;
+    right: 20px;
+    top: 15px;
+}
+.personalMain-wallet {
+    background: url(/image/user/wallet_bg.png) no-repeat;
+    background-size: 100% 100%;
+    -webkit-box-align: end;
+    align-items: flex-end;
+    justify-content: space-around;
+    padding: 30px 20px 20px 20px;
+}
+.personalMain-user, .personalMain-wallet {
+    height: 50%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+.personalMain-wallet-amount {
+    max-width: calc((100% - 3.73333rem) / 2);
+}
+.personalMain-wallet-amount, .personalMain-wallet-operation {
+    height: 40px;
+    display: inline-flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    font-size: 14px;
+    color: #3c4045;
+}
+.personalMain-wallet-amount p {
+    min-height: .64rem;
+}
+.personalMain-wallet-amount h6 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: .48rem;
+}
+.personalMain-wallet-operation {
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.personalMain-wallet-operation img {
+    width: 26px;
+    height: 22px;
+}
+#user_loggin .main:before {
+    display: none;
+}
+.personalNav {
+    height: 130px;
+    padding: 0 20px;
+    background: #fff;
+    font-size: 16px;
+    text-align: center;
+}
+h5.personalNav-title {
+    height: 40px;
+    line-height: 40px;
+    color: #3c4045;
+    font-size: 14px;
+    font-weight: 700;
+    border-bottom: .02667rem solid #e8ebf6;
+    text-align: left;
+}
+.personalNav-nav {
+    height: 90px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    justify-content: space-between;
+}
+.personalNav-nav>a {
+    width: 25%;
+    color: #3c4045;
+}
+.personalNav-nav img {
+    width: 34px;
+    height: 34px;
+    margin-bottom: 5px;
+}
+.personalNav-nav p {
+    min-height: 24px;
+    font-size: 12px;
+}
+.cell {
+    background: #fff;
+    margin-bottom: 10px;
+}
+.cellItem {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    height: 45px;
+    padding: 0 15px;
+    font-size: 14px;
+    color: #333;
+}
+.cellItem:not(:last-child) {
+    background-image: -webkit-linear-gradient(#e8ebf6, #e8ebf6);
+    background-image: linear-gradient(#e8ebf6, #e8ebf6);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: calc(100% - 1.8rem) 1px;
+}
+.cellItem-icon {
+    margin-right: 5px;
+}
+.cellItem-icon img {
+    width: 18px;
+    height: 18px;
+    vertical-align: middle;
+}
+.cellItem-title {
+    display: flex;
+    width: 100%;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+    color: #3d444d;
+    font-size: 14px;
+}
+.cellItem-title span:last-child {
+    margin-left: auto;
+    color: #bac2cc;
+    font-size: 12px;
+    margin-right: 10px;
+}

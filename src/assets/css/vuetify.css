@@ -1,0 +1,4 @@
+.v-field__outline {
+  --v-field-border-width: 1px !important;
+  --v-field-border-color: blue !important;
+}

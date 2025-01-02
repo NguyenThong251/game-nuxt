@@ -1,0 +1,87 @@
+.row-game {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 30px 20px 30px;
+}
+.row-game .gameNavCover-items {
+  width: calc(50% - 10px);
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+.row-game .gameNavCover-items:nth-child(2n) {
+  margin-right: 0;
+}
+.row-game .gameNavCover-items .gameNavCover-cover {
+  background: linear-gradient(#fff, #edf7ff);
+  background-size: 100% 100%;
+  border-radius: 4px;
+  position: relative;
+  padding-top: 100%;
+  width: 100%;
+  position: relative;
+}
+.row-game .gameNavCover-items .gameNavCover-cover .van-image__img, .row-game .gameNavCover-items .gameNavCover-cover .van-image__loading, .row-game .gameNavCover-items .gameNavCover-cover .van-image__error {
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin: 0 auto;
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.row-game .gameNavCover-items .gameNavCover-cover .gameNavCover-tag {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  font-size: 12px;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.25);
+  border-radius: 2px;
+  padding: 5px;
+}
+.row-game .gameNavCover-items .gameNavCover-name {
+  color: #7279a2;
+  font-size: 13px;
+  line-height: 1.5;
+  margin-top: 5px;
+}
+
+
+.sp .el-game-wrapper div.game-sub-tab-content {
+  display: block;
+  max-width: 100%;
+  /* width: calc(50% - 7px); */
+  padding-top: 20px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.el-game-wrapper .el-game-wrapper__content .el-container-wrap .game-content-list .game-tab-wrapper .game-tab-content .tp {
+  /* width: 100%; */
+  /* height: 100%; */
+  border-radius: 6px;
+  -webkit-box-shadow: 0 5px 14px 0 rgba(31, 92, 182, .08);
+  box-shadow: 0 5px 14px 0 rgba(31, 92, 182, .08);
+  overflow: hidden;
+  cursor: pointer;
+}
+.el-game-wrapper .el-image {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+
+}
+@media screen and (max-width: 1023px) {
+  .el-game-wrapper .el-game-wrapper__content .el-container-wrap .game-content-list .game-tab-wrapper .game-tab-content .tp {
+    width: 100%;
+    height: 100%;
+   
+  }
+}
+.el-game-wrapper.pc .el-game-wrapper__content .el-container-wrap .game-content-list .game-tab-wrapper {
+  padding-top: 60px;
+}

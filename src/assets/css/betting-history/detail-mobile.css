@@ -1,0 +1,156 @@
+.betDetail-card{
+  background: #fff;
+  margin: 25px 10px;
+  border-radius: 6px;
+  color: #333;
+  border: 1px solid #ccc;
+}
+.betDetail-title{
+  padding: 15px;
+  font-size: 20px;
+  font-weight: 700;
+}
+.betDetail-title-sub{
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+.betDetail-content{
+  font-size: 14px;
+}
+.betDetail-item{
+  padding: 10px 15px;
+  border-top: 1px solid #e8ebf6;
+}
+.betDetail-item:first-child{
+  border-top: none;
+}
+.betDetail-item .tx-item-col{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.betDetail-item .tx-item-res{
+  flex: 1 1;
+  margin-left: 15px;
+  text-align: right;
+}
+.betDetail-item .betDetail-id {
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.betDetail-item .betDetail-id > span{
+  max-width: 220px;
+  display: block;
+  overflow: hidden;
+text-overflow: ellipsis;
+white-space: nowrap;
+  margin-right: 5px;
+  font-weight: 500;
+}
+.betDetail-card .label{
+  background: #eff5fb;
+  padding: 5px 12px;
+  border-radius: 15px;
+  box-sizing: border-box;
+  color: #333;
+}
+.betDetail-card .label i{
+  display: inline-block;
+  margin: 0 3px;
+  vertical-align: middle;
+}
+.betDetail-table{
+  padding: 0 15px 30px;
+  font-size: 13px;
+}
+.betDetail-table table{
+  border: 1px solid #ccc;
+  width: 100%;
+  text-align: center;
+}
+.betDetail-table table + table{
+  margin-top: 20px;
+}
+.betDetail-table table thead th{
+  color: #fff;
+  font-weight: 500;
+  background: var(--herder-top);
+}
+.betDetail-table table tfoot th,
+.betDetail-table table tfoot td {
+  background: #eff5fb;
+  font-weight: bold;
+}
+.betDetail-table table tbody strong{
+  font-weight: 500;
+}
+.betDetail-table table th,
+.betDetail-table table td{
+  border: 1px solid #ccc;
+  padding: 8px 4px;
+}
+.betDetail-card-result .betDetail-result{
+  margin-bottom: 20px;
+  text-align: center;
+}
+.betDetail-result-item{
+  display: inline-block;
+}
+.betDetail-card-result .betDetail-result.--dice .betDetail-result-item{
+  width: 35px;
+  margin: 0 2px;
+}
+.betDetail-card-info .betDetail-result.--coin .betDetail-result-item{
+  width: 20px;
+}
+.betDetail-card-info .betDetail-result.--dice .betDetail-result-item{
+  width: 25px;
+}
+.betDetail-card-result .betDetail-result.--card {
+  text-align: left;
+  display: flex;
+  align-items: center;
+}
+.betDetail-card-result .betDetail-result.--card .betDetail-result-item {
+  width: 30px;
+  position: relative;
+}
+.betDetail-card-result .betDetail-result.--card .betDetail-result-item + .betDetail-result-item {
+  padding-left: 20px;
+}
+.betDetail-card-result .betDetail-result.--card .betDetail-result-item + .betDetail-result-item::before {
+  content: "+";
+  position: absolute;
+  top: 50%;
+  left: 6px;
+  font-size: 15px;
+  z-index: 1;
+  font-weight: bold;
+  transform: translateY(-50%);
+}
+.betDetail-card-result .betDetail-result.--card .betDetail-result-item.sum {
+  padding-left: 25px;
+  font-size: 15px;
+}
+.betDetail-card-result .betDetail-result.--card .betDetail-result-item.sum::before {
+  content: "=";
+  left: 10px;
+}
+.--bg-green{
+  background: rgba(8,153,26,0.08) !important;
+}
+.--gray{
+  color: #7e7a7a !important;
+}
+.--bg-gray{
+  background: rgba(143,139,139,0.08) !important;
+}
+.--hidden{
+  display: none !important;
+}
+
+.main:before{
+  opacity: 0;
+}
