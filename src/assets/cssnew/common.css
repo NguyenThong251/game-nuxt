@@ -16,11 +16,11 @@ time, mark, audio, video {
   padding: 0;
   border: 0;
   outline: 0;
-  font: inherit;
+  font: inherit ;
 }
 
 html {
-  font-size: 62.5%;
+  font-size: 62.5% !important;
   overflow-y: scroll;
 }
 
@@ -82,6 +82,7 @@ body {
   font-family: "Roboto", Arial, Helvetica, sans-serif;
   -webkit-text-size-adjust: 100%;
   color: #222939;
+  background: #F5F6FB;
 }
 
 .wrap {
@@ -129,6 +130,10 @@ body {
 
 .hide {
   display: none;
+}
+
+b, strong {
+  font-weight: bold;
 }
 
 /* adjustment
@@ -488,218 +493,342 @@ body {
   border: 1px solid #fff;
 }
 
-header {
-  color: #fff;
-  background: #006549;
+@media screen and (min-width: 1023px) {
+  header {
+    color: #fff;
+    background: #006549;
+    position: relative;
+  }
+  header .hlogo {
+    width: 88px;
+    margin-right: 20px;
+    -webkit-filter: drop-shadow(0 0 0.3rem);
+            filter: drop-shadow(0 0 0.3rem);
+    color: rgba(0, 0, 0, 0.65);
+  }
+  header .hlogoWrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  header .hlogoWrap .sub {
+    font-weight: 900;
+    font-size: 15px;
+  }
+  header .header01 {
+    padding: 6px 0;
+    max-width: 1640px;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  header .header01 .hbtn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-left: auto;
+  }
+  header .header01 .hbtn li {
+    margin: 0 6px;
+  }
+  header .header01 .btnTry {
+    background: transparent;
+    min-width: 130px;
+  }
+  header .header01 .btnTry img {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+  }
+  header .header01 .btnLogin {
+    background: #fff;
+    color: #3A3A3C;
+    text-shadow: none;
+    min-width: 130px;
+  }
+  header .header01 .btnRegister {
+    min-width: 130px;
+  }
+  header .header01 .btnDropdown {
+    margin-top: -8px;
+    margin-right: 20px;
+  }
+  header .header01 .btnUserNap,
+  header .header01 .btnUserRut {
+    min-width: 110px;
+  }
+  header .header01 .userName small {
+    font-size: 12px;
+  }
+  header .header01 .userName .name {
+    margin-left: 3px;
+    font-weight: bold;
+  }
+  header .header01 .btnLogout {
+    color: #FFB677;
+    background: none;
+    font-weight: 400;
+  }
+  header .header01 .btnLogout img {
+    width: 20px;
+    margin-right: 8px;
+    vertical-align: middle;
+  }
+  header .header01 .userNotify {
+    padding: 0 20px;
+    position: relative;
+    cursor: pointer;
+  }
+  header .header01 .userNotify i {
+    width: 22px;
+  }
+  header .header01 .userNotify .number {
+    color: #fff;
+    background: #ff0000;
+    height: 16px;
+    min-width: 16px;
+    border-radius: 8px;
+    padding: 0 3px;
+    display: inline-block;
+    position: absolute;
+    z-index: 1;
+    top: -5px;
+    left: 50%;
+    text-align: center;
+  }
+  header .header01 .userAmount {
+    height: 36px;
+    line-height: 36px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 40px;
+    color: #FBE98B;
+    padding: 0 35px 0 15px;
+    font-weight: 700;
+    position: relative;
+    min-width: 150px;
+  }
+  header .header01 .userAmount:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    border-right: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+    width: 10px;
+    height: 10px;
+    margin-top: -7px;
+  }
+  header .header02 {
+    background: #41BF9C;
+    padding: 10px 0;
+  }
+  header .header02 nav li {
+    margin: 3px 8px;
+  }
+  header .header02 nav a {
+    font-size: 20px;
+    font-weight: 700;
+    background: rgba(69, 69, 69, 0.15);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-radius: 40px;
+    line-height: 1;
+    height: 40px;
+    padding: 0 15px;
+    position: relative;
+    -webkit-transition: 0.2s all;
+    transition: 0.2s all;
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.34);
+    padding-right: 35px;
+  }
+  header .header02 nav a img {
+    margin-right: 5px;
+  }
+  header .header02 nav a:hover {
+    background-color: #fff;
+    color: #006549;
+    text-shadow: none;
+  }
+  header .header02 nav a:hover:after {
+    border-color: #006549;
+  }
+  header .header02 nav a:after {
+    content: "";
+    position: absolute;
+    right: 13px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 9px;
+    height: 16px;
+    background: url("../img/icon_right_white.svg") no-repeat center/contain;
+  }
+  header .header02 nav .home a {
+    padding-right: 15px;
+  }
+  header .header02 nav .home a::after {
+    content: none;
+  }
+  header .header02 nav .active a {
+    color: #006549;
+    background: #fff;
+    text-shadow: none;
+  }
+  header .header02 nav .active a::after {
+    border-color: #fff;
+  }
 }
-header .hlogo {
-  width: 88px;
-  margin-right: 20px;
-}
-header .hlogoWrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-header .hlogoWrap .sub {
-  font-weight: 900;
-  font-size: 15px;
-}
-header .header01 {
-  padding: 10px 0;
-  max-width: 1640px;
+.marquee {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
   margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-header .header01 .hbtn {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-header .header01 .hbtn li {
-  margin: 0 6px;
-}
-header .header01 .btnTry {
-  background: transparent;
-  min-width: 130px;
-}
-header .header01 .btnTry img {
-  display: inline-block;
-  vertical-align: middle;
-  margin-right: 5px;
-}
-header .header01 .btnLogin {
-  background: #fff;
-  color: #3A3A3C;
-  text-shadow: none;
-  min-width: 130px;
-}
-header .header01 .btnRegister {
-  min-width: 130px;
-}
-header .header01 .btnDropdown {
-  margin-top: -8px;
-  margin-right: 20px;
-}
-header .header01 .btnUserNap,
-header .header01 .btnUserRut {
-  min-width: 110px;
-}
-header .header01 .userName small {
-  font-size: 12px;
-}
-header .header01 .userName .name {
-  margin-left: 3px;
-  font-weight: bold;
-}
-header .header01 .btnLogout {
-  color: #FFB677;
-  background: none;
-  font-weight: 400;
-}
-header .header01 .btnLogout img {
-  width: 20px;
-  margin-right: 8px;
-  vertical-align: middle;
-}
-header .header01 .userNotify {
-  padding: 0 20px;
-  position: relative;
-  cursor: pointer;
-}
-header .header01 .userNotify i {
-  width: 22px;
-}
-header .header01 .userNotify .number {
+  width: 1530px;
+  max-width: 95%;
+  background: rgba(0, 0, 0, 0.65);
   color: #fff;
-  background: #ff0000;
-  height: 16px;
-  min-width: 16px;
-  border-radius: 50%;
-  display: inline-block;
-  position: absolute;
-  z-index: 1;
-  top: -5px;
-  left: 50%;
-  text-align: center;
+  border-radius: 0 0 30px 30px;
 }
-header .header01 .userAmount {
-  height: 36px;
-  line-height: 36px;
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 40px;
-  color: #FBE98B;
-  padding: 0 35px 0 15px;
-  font-weight: 700;
-  position: relative;
-  min-width: 150px;
-}
-header .header01 .userAmount:after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  right: 15px;
-  border-right: 2px solid #fff;
-  border-bottom: 2px solid #fff;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-  width: 10px;
-  height: 10px;
-  margin-top: -5px;
-}
-header .header02 {
-  background: #41BF9C;
-  padding: 10px 0;
-}
-header .header02 nav li {
-  margin: 3px 8px;
-}
-header .header02 nav a {
-  font-size: 20px;
-  font-weight: 700;
-  background: rgba(69, 69, 69, 0.15);
+.marquee_inner {
+  padding: 6px 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border-radius: 40px;
+}
+.marquee-txt {
+  overflow: hidden;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1;
+          flex: 1 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.marquee-txt > p {
+  -webkit-animation: marquee 55s linear 0s infinite;
+          animation: marquee 55s linear 0s infinite;
+  white-space: nowrap;
+  z-index: 1;
+  margin-right: 150px;
+}
+.marquee-ico {
+  margin-right: 3px;
+  width: 20px;
   line-height: 1;
-  height: 40px;
-  padding: 0 15px;
-  position: relative;
-  -webkit-transition: 0.2s all;
-  transition: 0.2s all;
-  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.34);
-  padding-right: 35px;
-}
-header .header02 nav a img {
-  margin-right: 5px;
-}
-header .header02 nav a:hover {
-  background-color: #fff;
-  color: #006549;
-  text-shadow: none;
-}
-header .header02 nav a:hover:after {
-  border-color: #006549;
-}
-header .header02 nav a:after {
-  content: "";
-  position: absolute;
-  right: 20px;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  border-top: 2px solid #fff;
-  border-right: 2px solid #fff;
-  -webkit-transform: rotate(45deg) translateY(-50%);
-          transform: rotate(45deg) translateY(-50%);
-  width: 10px;
-  height: 10px;
-}
-header .header02 nav .home a {
-  padding-right: 15px;
-}
-header .header02 nav .home a::after {
-  content: none;
-}
-header .header02 nav .active a {
-  color: #006549;
-  background: #fff;
-  text-shadow: none;
-}
-header .header02 nav .active a::after {
-  border-color: #fff;
 }
 
+@-webkit-keyframes marquee {
+  0% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+  to {
+    -webkit-transform: translate(-100%);
+            transform: translate(-100%);
+  }
+}
+
+@keyframes marquee {
+  0% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+  to {
+    -webkit-transform: translate(-100%);
+            transform: translate(-100%);
+  }
+}
+@media screen and (max-width: 1022px) {
+  header {
+    margin-bottom: 10px;
+    position: relative;
+  }
+  header .hlogoWrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  header .hlogoWrap .sub {
+    color: #00A579;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1;
+            flex: 1 1;
+    font-size: 12px;
+    text-align: right;
+    padding: 0 10px;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  header .hlogo {
+    width: 118px;
+    margin: 0;
+  }
+  .marquee {
+    background: #DCF2EE;
+    color: #003421;
+    bottom: 0;
+    top: auto;
+    width: calc(100% - 150px);
+    right: 7px;
+    left: auto;
+    border-radius: 4px;
+  }
+  .marquee_inner {
+    padding: 2px 6px;
+  }
+  .marquee-ico {
+    width: 12px;
+  }
+  .marquee-txt {
+    font-size: 10px;
+  }
+}
 footer {
   text-align: center;
   background-color: #fff;
   color: #808080;
-  padding: 30px 0;
+  padding: 25px 0;
 }
 footer .flogo {
   max-width: 1400px;

@@ -1,12 +1,12 @@
 <template>
-  <main class="main">
-    <UserLayoutDesktop />
+  <!-- <main class="main">
     <UserLayoutMobile />
-  </main>
+  </main> -->
+  <UserLayoutDesktop />
 </template>
 
 <style scoped>
-.main {
+/* .main {
   padding-top: 140px;
   position: relative;
 }
@@ -15,5 +15,5 @@
   .main {
     padding-top: 0;
   }
-}
+} */
 </style>

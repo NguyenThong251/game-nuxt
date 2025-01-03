@@ -128,22 +128,22 @@
   </div>
 </template>
 <script setup lang="ts">
-  import { useAuthStore } from '~/store/auth';
-  import { RouterPath } from '~/const';
+import { useAuthStore } from '~/store/auth';
+import { RouterPath } from '~/const';
 
-  const authStore = useAuthStore()
-  const { userInfo, formatedMoney } = storeToRefs(authStore)
-  const { handleSignOut } = useCommon()
+const authStore = useAuthStore()
+const { userInfo, formatedMoney } = storeToRefs(authStore)
+const { handleSignOut } = useCommon()
 
-  const otherLink = ref('')
+const otherLink = ref('')
 
-  onMounted(() => {
-    if (!window.location.origin.startsWith('http://localhost')) {
-      const newSubdomain = 'agc'
-      otherLink.value = window.location.origin.replace(/^(https?:\/\/)([^.]+)\./, `$1${newSubdomain}.`)
-    }
-  })
+onMounted(() => {
+  if (!window.location.origin.startsWith('http://localhost')) {
+    const newSubdomain = 'agc'
+    otherLink.value = window.location.origin.replace(/^(https?:\/\/)([^.]+)\./, `$1${newSubdomain}.`)
+  }
+})
 </script>
 <style scoped>
-  @import url('~/assets/css/user-mobile.css');
+@import url('~/assets/css/user-mobile.css');
 </style>

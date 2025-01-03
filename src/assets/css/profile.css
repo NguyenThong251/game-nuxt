@@ -441,7 +441,7 @@
 .profile__info__phone_update a,
 .profile__info__email_update a {
   display: block;
-  padding: 0 6px;
+  padding: 0 5px;
 }
 
 /* password-manager */

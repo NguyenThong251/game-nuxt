@@ -161,16 +161,7 @@
         </ul>
       </div>
     </div> -->
-  <!-- <div class="profile-promotion">
-    <h2 class="profile-promotion__title">kHUYẾN MÃI</h2>
-    <ul class="profile-promotion__banner">
-      <li><a href="#"><img src="/img/profile/banner.png" alt="banner"></a></li>
-      <li><a href="#"><img src="/img/profile/banner.png" alt="banner"></a></li>
-      <li><a href="#"><img src="/img/profile/banner.png" alt="banner"></a></li>
-      <li><a href="#"><img src="/img/profile/banner.png" alt="banner"></a></li>
-    </ul>
-    <p class="profile-promotion__btn"><a href="#">Xem Tất Cả</a></p>
-  </div> -->
+
 </template>
 <script setup lang="ts">
 import { useAuthStore } from '~/store/auth';

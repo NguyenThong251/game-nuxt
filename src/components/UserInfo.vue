@@ -64,35 +64,35 @@
   </v-menu>
 </template>
 <script setup lang="ts">
-  import type { TMe } from '~/types/auth';
+import type { TMe } from '~/types/auth';
 
-  defineProps<{ userInfo: TMe, formatedMoney: string }>()
-  defineEmits<{
-    (e: 'signout'): void
-  }>()
+defineProps<{ userInfo: TMe, formatedMoney: string }>()
+defineEmits<{
+  (e: 'signout'): void
+}>()
 </script>
 <style scoped>
-  .user-chip {
-    display: flex;
-    align-items: center;
-    padding: 8px;
-    background-color: #5478a0;
-    color: #fff;
-  }
+/* .user-chip {
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  background-color: #5478a0;
+  color: #fff;
+}
 
-  .user-info {
-    display: flex;
-    flex-direction: column;
-    margin-left: 8px;
-  }
+.user-info {
+  display: flex;
+  flex-direction: column;
+  margin-left: 8px;
+}
 
-  .user-money {
-    margin-top: -4px;
-    color: #ffd700;
-    font-weight: bold;
-  }
+.user-money {
+  margin-top: -4px;
+  color: #ffd700;
+  font-weight: bold;
+}
 
-  .header .v-chip {
-    --v-chip-height: 34px;
-  }
+.header .v-chip {
+  --v-chip-height: 34px;
+} */
 </style>

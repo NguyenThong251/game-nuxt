@@ -1,6 +1,6 @@
 <template>
-  <div class="pc">
-    <!-- <NuxtLayout name="default">
+  <!-- <div class="pc"> -->
+  <!-- <NuxtLayout name="default">
       <div class="inner" style="padding: 20px">
         <div class="re-bg"></div>
         <div class="main-user__row">
@@ -100,84 +100,84 @@
     </NuxtLayout> -->
 
 
-    <NuxtLayout name="default">
-      <main id="content">
-        <div class="profile">
-          <div class="profile-sidebar">
-            <div class="profile__title__logo"><a href="./"><img src="/img/logo.svg" alt="TUT88"></a></div>
-            <div class="profile__signout sp">Đăng Xuất <img src="/img/profile/icon_signout.png" alt="icon"></div>
-            <div class="profile-user">
-              <div class="user-row1">
-                <p class="user__tag">VIP1</p>
-                <p class="user__username">Usenguyen000</p>
-              </div>
-              <div class="user__balance sp">
-                <div class="user__balance__ttl">Số Dư</div>
-                <div class="user__balance__money"><span class="change"><img src="/img/profile/icon_change.png"
-                      alt="icon"></span>135,000,000,00</div>
-              </div>
-              <div class="user__introcode">Mã Giới Thiệu:<span class="code">3454677</span><span class="icon"><img
-                    src="/img/profile/icon_copy.png" alt="icon"></span></div>
-              <div class="user__mail new sp"><a href="#"><img src="/img/profile/icon_mail.png" alt="icon">Hộp
-                  Thư</a></div>
+  <NuxtLayout name="default">
+    <main id="content">
+      <div class="profile">
+        <div class="profile-sidebar">
+          <div class="profile__title__logo"><a href="./"><img src="/img/logo.svg" alt="TUT88"></a></div>
+          <div class="profile__signout sp">Đăng Xuất <img src="/img/profile/icon_signout.png" alt="icon"></div>
+          <div class="profile-user">
+            <div class="user-row1">
+              <p class="user__tag">VIP1</p>
+              <p class="user__username">{{ userInfo.name }}</p>
             </div>
-            <ul class="about__money sp">
-              <li><a href="">RÚT TIỀN</a></li>
-              <li><a href="">NẠP TIỀN</a></li>
-            </ul>
-            <div class="account">
-              <h2 class="account__h2">Tài Khoản</h2>
-              <ul class="account__list">
-                <li><a href="hop-thu.html"><img src="/img/profile/icon_mail.png" alt="icon">Hộp Thư</a></li>
-                <li><a class="active" href="thong-tin-ca-nhan.html"><img src="/img/profile/icon_user.png"
-                      alt="icon">Thông Tin Cá Nhân</a></li>
-                <li><a href="the-ngan-hang.html"><img src="/img/profile/icon_bank.png" alt="icon">Thẻ Ngân
-                    Hàng</a></li>
-                <li><a href="vi-tien-usdt.html"><img src="/img/profile/icon_wallet.png" alt="icon">Ví tiền
-                    USDT</a></li>
-              </ul>
+            <div class="user__balance sp">
+              <div class="user__balance__ttl">Số Dư</div>
+              <div class="user__balance__money"><span class="change"><img src="/img/profile/icon_change.png"
+                    alt="icon"></span>135,000,000,00</div>
             </div>
-            <div class="history">
-              <h2 class="history__h2">Lịch Sử</h2>
-              <ul class="history__list">
-                <li><a href="lich-su-khuyen-mai.html"><img src="/img/profile/icon_gift.png" alt="icon">Lịch Sử
-                    Khuyến Mãi</a></li>
-                <li><a href="lich-su-cuoc.html"><img src="/img/profile/icon_bet.svg" alt="icon">Lịch Sử Cược</a>
-                </li>
-                <li><a href="lich-su-nap-tien.html"><img src="/img/profile/icon_deposit.svg" alt="icon">Lịch Sử
-                    Nạp Tiền</a></li>
-                <li><a href="lich-su-rut-tien.html"><img src="/img/profile/icon_withdraw.svg" alt="icon">Lịch Sử
-                    Rút Tiền</a></li>
-              </ul>
-            </div>
+            <div class="user__introcode">Mã Giới Thiệu:<span class="code">{{ userInfo.invite_code }}</span><span
+                class="icon"><img src="/img/profile/icon_copy.png" alt="icon"></span></div>
+            <div class="user__mail new sp"><a href="#"><img src="/img/profile/icon_mail.png" alt="icon">Hộp
+                Thư</a></div>
           </div>
-          <div class="profile-content">
-
-            <NuxtPage />
-          </div>
-
-          <div class="profile-promotion">
-            <h2 class="profile-promotion__title">kHUYẾN MÃI</h2>
-            <ul class="profile-promotion__banner">
-              <li><a href="#"><img src="/img/profile/banner.png" alt="banner"></a></li>
-              <li><a href="#"><img src="/img/profile/banner.png" alt="banner"></a></li>
-              <li><a href="#"><img src="/img/profile/banner.png" alt="banner"></a></li>
-              <li><a href="#"><img src="/img/profile/banner.png" alt="banner"></a></li>
+          <ul class="about__money sp">
+            <li><a href="">RÚT TIỀN</a></li>
+            <li><a href="">NẠP TIỀN</a></li>
+          </ul>
+          <div class="account">
+            <h2 class="account__h2">Tài Khoản</h2>
+            <ul class="account__list">
+              <li><a href="hop-thu.html"><img src="/img/profile/icon_mail.png" alt="icon">Hộp Thư</a></li>
+              <li><a class="active" href="thong-tin-ca-nhan.html"><img src="/img/profile/icon_user.png" alt="icon">Thông
+                  Tin Cá Nhân</a></li>
+              <li><a href="the-ngan-hang.html"><img src="/img/profile/icon_bank.png" alt="icon">Thẻ Ngân Hàng</a>
+              </li>
+              <li><a href="vi-tien-usdt.html"><img src="/img/profile/icon_wallet.png" alt="icon">Ví tiền USDT</a>
+              </li>
             </ul>
-            <p class="profile-promotion__btn"><a href="#">Xem Tất Cả</a></p>
+          </div>
+          <div class="history">
+            <h2 class="history__h2">Lịch Sử</h2>
+            <ul class="history__list">
+              <li><a href="lich-su-khuyen-mai.html"><img src="/img/profile/icon_gift.png" alt="icon">Lịch Sử
+                  Khuyến Mãi</a></li>
+              <li><a href="lich-su-cuoc.html"><img src="/img/profile/icon_bet.svg" alt="icon">Lịch Sử Cược</a>
+              </li>
+              <li><a href="lich-su-nap-tien.html"><img src="/img/profile/icon_deposit.svg" alt="icon">Lịch Sử Nạp
+                  Tiền</a></li>
+              <li><a href="lich-su-rut-tien.html"><img src="/img/profile/icon_withdraw.svg" alt="icon">Lịch Sử Rút
+                  Tiền</a></li>
+            </ul>
           </div>
         </div>
-        <!-- <ul class="fixed-bottom">
-          <li><a href="./"><img src="assets/img/profile/icon_home.png" alt="icon">Trang Chủ</a></li>
-          <li><a href="#"><img src="assets/img/profile/icon_vip.png" alt="icon">VIP</a></li>
-          <li><a href="#"><img src="assets/img/profile/icon_gift2.png" alt="icon">Ưu Đãi</a></li>
-          <li><a href="#"><img src="assets/img/profile/icon_support.png" alt="icon">Hỗ Trợ</a></li>
-          <li class="personal"><img src="assets/img/profile/icon_setting.png" alt="icon">Cá Nhân</li>
-        </ul> -->
-      </main>
+        <div class="profile-content">
 
-    </NuxtLayout>
-  </div>
+          <NuxtPage />
+        </div>
+        <div class="profile-promotion">
+          <h2 class="profile-promotion__title">kHUYẾN MÃI</h2>
+          <ul class="profile-promotion__banner">
+            <li><a href="#"><img src="/img/profile/banner.png" alt="banner"></a></li>
+            <li><a href="#"><img src="/img/profile/banner.png" alt="banner"></a></li>
+            <li><a href="#"><img src="/img/profile/banner.png" alt="banner"></a></li>
+            <li><a href="#"><img src="/img/profile/banner.png" alt="banner"></a></li>
+          </ul>
+          <p class="profile-promotion__btn"><a href="#">Xem Tất Cả</a></p>
+        </div>
+
+      </div>
+      <!-- <ul class="fixed-bottom">
+          <li><a href="./"><img src="/img/profile/icon_home.png" alt="icon">Trang Chủ</a></li>
+          <li><a href="#"><img src="/img/profile/icon_vip.png" alt="icon">VIP</a></li>
+          <li><a href="#"><img src="/img/profile/icon_gift2.png" alt="icon">Ưu Đãi</a></li>
+          <li><a href="#"><img src="/img/profile/icon_support.png" alt="icon">Hỗ Trợ</a></li>
+          <li class="personal"><img src="/img/profile/icon_setting.png" alt="icon">Cá Nhân</li>
+        </ul> -->
+    </main>
+
+  </NuxtLayout>
+  <!-- </div> -->
 </template>
 <script setup lang="ts">
 import { PageName, RouterPath } from '~/const';
@@ -206,12 +206,11 @@ onMounted(() => {
 })
 </script>
 <style scoped>
-/* @import url('~/assets/css/user-desktop.css'); */
 @import url('~/assets/cssnew/profile.css');
 
-.content {
+/* .content {
   background: #fff;
   padding: 20px;
   border-radius: 6px;
-}
+} */
 </style>
