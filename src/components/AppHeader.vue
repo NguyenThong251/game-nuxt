@@ -33,8 +33,12 @@
           <div class="btnDropdown"><a href="#"><img src="/img/header/hdropdown.png" alt=""></a></div>
           <div class="">
             <ul class="flexCenter">
-              <li><button class="btnMain btnLogin">ĐĂNG NHẬP</button></li>
-              <li><button class="btnMain btnRegister btn--green">ĐĂNG KÝ</button></li>
+              <li data-popup="login" class="btnMain btnLogin" @click="() => authStore.handleOpenSignInDialog()">
+                ĐĂNG NHẬP
+              </li>
+              <li data-popup=" register" class="btnMain btnRegister btn--green"
+                @click="authStore.handleOpenSignUpDialog">
+                ĐĂNG KÝ</li>
               <li><button class="btnMain btnTry btn--bd"><img src="/img/header/htry.png" alt="">CHƠI THỬ</button>
               </li>
             </ul>
@@ -81,6 +85,7 @@
 import type { TSystemConfig } from '~/features/config/config.type';
 import type { LANG } from '~/types/common';
 import type { TCategoryGame, TGame } from '~/types/game';
+import { useAuthStore } from '~/store/auth';
 
 defineProps<{
   categories: Array<{
@@ -103,4 +108,9 @@ const emit = defineEmits<{
 const handleChangeLang = (lang: LANG) => {
   emit('changeLang', lang)
 }
+
+
+const { handleSignOut } = useCommon()
+const authStore = useAuthStore()
+const { isAuthenticated, userInfo, formatedMoney } = storeToRefs(authStore)
 </script>

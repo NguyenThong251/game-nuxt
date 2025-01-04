@@ -1,16 +1,17 @@
 <template>
   <main id="content">
-    <div id="kv">
-      <!-- <div class="sp"><img src="/img/home/home_kv_sp.png" alt=""></div> -->
-      <v-carousel class="<md:hidden" :show-arrows="false" :interval="3000" hide-delimiters height="calc(500/1920*100vw)"
-        cycle>
-        <v-carousel-item v-for="(banner, i) in banners.pc" :key="i" :src="banner.url" cover />
-      </v-carousel>
-      <v-carousel class="md:hidden" :show-arrows="false" :interval="3000" hide-delimiters height="calc(280/750*100vw)"
-        cycle>
-        <v-carousel-item v-for="(banner, i) in banners.mobile" :key="i" :src="banner.url" cover />
-      </v-carousel>
-    </div>
+    <v-carousel class="<md:hidden" :show-arrows="false" :interval="3000" hide-delimiters height="calc(500/1920*100vw)"
+      cycle>
+      <v-carousel-item v-for="(banner, i) in banners.pc" :key="i" :src="banner.url" cover />
+    </v-carousel>
+    <v-carousel class="md:hidden" :show-arrows="false" :interval="3000" hide-delimiters height="calc(280/750*100vw)"
+      cycle>
+      <v-carousel-item v-for="(banner, i) in banners.mobile" :key="i" :src="banner.url" cover />
+    </v-carousel>
+    <!-- <div class="sp"><img src="/img/home/home_kv_sp.png" alt=""></div> -->
+
+    <!-- <div id="kv">
+    </div> -->
     <!-- for PC -->
     <div class="pc">
       <section id="hotgame">
@@ -30,62 +31,15 @@
             <div class="item"><img src="/img/home/hotgame_taixiulive.png" alt=""><span class="btnPlay">COMMING
                 SOON</span></div>
           </ul>
-          <!-- <ul class="gameList" v-for="(game, index) in homeHots" :key="index">
-            <div class="item"><img :src="game?.img_url" alt=""><a href="#" class="btnPlay">CHƠI
-                NGAY</a></div>
-          </ul> -->
+
         </div>
       </section>
       <section id="livecasino">
         <h2 class="ttl"><img src="/img/home/ttl_casino.png" alt="HOT GAME"></h2>
         <div class="gameListWrap game--casino">
-          <!-- <div class="gameList jsCasinoSlider slSlider">
-            <div class="item">
-              <div class="info"><img src="/img/home/game_casino_001.png" alt="">
-                <p class="caption">Casino DG</p><a href="#" class="button btnMain btn--green">CHƠI NGAY</a>
-              </div>
-            </div>
-            <div class="item">
-              <div class="info"><img src="/img/home/game_casino_002.png" alt="">
-                <p class="caption">Casino SEXY</p><a href="#" class="button btnMain btn--green">CHƠI NGAY</a>
-              </div>
-            </div>
-            <div class="item">
-              <div class="info"><img src="/img/home/game_casino_003.png" alt="">
-                <p class="caption">Casino EVO</p><a href="#" class="button btnMain btn--green">CHƠI NGAY</a>
-              </div>
-            </div>
-            <div class="item">
-              <div class="info"><img src="/img/home/game_casino_004.png" alt="">
-                <p class="caption">Casino WM</p><a href="#" class="button btnMain btn--green">CHƠI NGAY</a>
-              </div>
-            </div>
-            <div class="item">
-              <div class="info"><img src="/img/home/game_casino_001.png" alt="">
-                <p class="caption">Casino DG</p><a href="#" class="button btnMain btn--green">CHƠI NGAY</a>
-              </div>
-            </div>
-            <div class="item">
-              <div class="info"><img src="/img/home/game_casino_002.png" alt="">
-                <p class="caption">Casino SEXY</p><a href="#" class="button btnMain btn--green">CHƠI NGAY</a>
-              </div>
-            </div>
-          </div> -->
           <div data-v-166fe82e="" class="gameList jsCasinoSlider slSlider">
             <v-slide-group show-arrows>
               <v-slide-group-item v-for="game in casinoCategories">
-                <!-- <div class="game game-nt ma-4"
-                  @click="() => handleClickGame({ id: game.id, game_type: game.game_type, game_code: game.game_code, api_name: game.api_name })">
-                  <div class="el-image">
-                    <img :src="game?.img_url" class="el-image__inne" :alt="game?.name">
-                  </div>
-                  <div class="btn-enterGame">
-                    <button class="el-button el-button--default">
-                      <span>Vào trò chơi</span>
-                    </button>
-                  </div>
-                  <div data-v-6a78c811="" class="gameName">{{ game?.name }}</div>
-                </div> -->
                 <div class="item">
                   <div class="info"><img :src="game.web_pic" alt="">
                     <p class="caption">{{ game.title }}</p><a
@@ -104,103 +58,115 @@
       <section id="thethao">
         <h2 class="ttl"><img src="/img/home/ttl_thethao.png" alt="HOT GAME"></h2>
         <div class="gameListWrap game--sport">
-          <div class="gameList">
-            <div class="item">
-              <div class="info"><img src="/img/home/game_sport_001.png" alt="">
-                <p class="caption">THỂ THAO SABA</p><a href="#" class="button btnMain btn--green">CHƠI NGAY</a>
-              </div>
-            </div>
-            <div class="item">
-              <div class="info"><img src="/img/home/game_sport_002.png" alt="">
-                <p class="caption">THỂ THAO CMD</p><a href="#" class="button btnMain btn--green">CHƠI NGAY</a>
-              </div>
-            </div>
-            <div class="item">
-              <div class="info"><img src="/img/home/game_sport_003.png" alt="">
-                <p class="caption">THỂ THAO SBO</p><a href="#" class="button btnMain btn--green">CHƠI NGAY</a>
-              </div>
-            </div>
-            <div class="item">
-              <div class="info"><img src="/img/home/game_sport_004.png" alt="">
-                <p class="caption">THỂ THAO BTi</p><a href="#" class="button btnMain btn--green">CHƠI NGAY</a>
-              </div>
-            </div>
+          <div data-v-166fe82e="" class="gameList jsCasinoSlider slSlider">
+            <v-slide-group show-arrows>
+              <v-slide-group-item v-for="game in sportCategories">
+                <div class="item">
+                  <div class="info"><img :src="game.web_pic" alt="">
+                    <p class="caption">{{ game.title }}</p><a
+                      @click="() => handleClickGame({ id: game.id, game_type: game.game_type, api_name: game.api_name })"
+                      class="button btnMain btn--green">CHƠI NGAY</a>
+                  </div>
+                </div>
+              </v-slide-group-item>
+            </v-slide-group>
           </div>
         </div>
       </section>
       <section id="other">
-        <div class="gameListWrap game--other">
-          <div class="gameList">
-            <div class="item">
+        <v-container class="game--container">
+          <v-row>
+            <v-col cols="2" class="position-relative custom-col">
               <p class="title">NỔ HỦ</p>
-              <div class="info">
-                <div class="imglist jsOtherSlider slSlider">
-                  <p class="itemSl"><img src="/img/home/game_other_001.png" alt=""></p>
-                  <p class="itemSl"><img src="/img/home/game_other_001.png" alt=""></p>
-                  <p class="itemSl"><img src="/img/home/game_other_001.png" alt=""></p>
-                  <p class="itemSl"><img src="/img/home/game_other_001.png" alt=""></p>
-                  <p class="itemSl"><img src="/img/home/game_other_001.png" alt=""></p>
-                  <p class="itemSl"><img src="/img/home/game_other_001.png" alt=""></p>
-                  <p class="itemSl"><img src="/img/home/game_other_001.png" alt=""></p>
-                  <p class="itemSl"><img src="/img/home/game_other_001.png" alt=""></p>
-                  <p class="itemSl"><img src="/img/home/game_other_001.png" alt=""></p>
-                  <p class="itemSl"><img src="/img/home/game_other_001.png" alt=""></p>
+              <v-carousel height="300" show-arrows="hover" cycle hide-delimiters>
+                <div class="" v-for="game in slotCategories">
+                  <v-carousel-item :src="game.web_pic" cover>
+                  </v-carousel-item>
                 </div>
-                <p class="caption">Nổ Hủ PP</p><a href="#" class="button btnMain btn--green">CHƠI NGAY</a>
+              </v-carousel>
+              <div class="position-absolute top-100px right-30px">
+                <p class="caption ">Nổ Hủ PP</p>
               </div>
-            </div>
-            <div class="item">
+              <div class="position-absolute bottom-30px left-50  translate-center ">
+                <a href="#" class="button btnMain btn--green">CHƠI NGAY</a>
+              </div>
+            </v-col>
+            <v-col cols="2" class="position-relative custom-col">
               <p class="title">BẮN CÁ</p>
-              <div class="info">
-                <div class="imglist jsOtherSlider slSlider">
-                  <p class="itemSl"><img src="/img/home/game_other_002.png" alt=""></p>
-                  <p class="itemSl"><img src="/img/home/game_other_002.png" alt=""></p>
-                  <p class="itemSl"><img src="/img/home/game_other_002.png" alt=""></p>
-                  <p class="itemSl"><img src="/img/home/game_other_002.png" alt=""></p>
+              <v-carousel height="300" show-arrows="hover" cycle hide-delimiters>
+                <div class="" v-for="game in fishingCategories">
+                  <v-carousel-item :src="game.web_pic" cover>
+                  </v-carousel-item>
                 </div>
-                <p class="caption">Bắn Cá FS</p><a href="#" class="button btnMain btn--green">CHƠI NGAY</a>
+              </v-carousel>
+              <div class="position-absolute top-100px right-30px">
+                <p class="caption ">Bắn Cá FS</p>
               </div>
-            </div>
-            <div class="item">
+              <div class="position-absolute bottom-30px left-50  translate-center ">
+                <a href="#" class="button btnMain btn--green">CHƠI NGAY</a>
+              </div>
+            </v-col>
+            <v-col cols="2" class="position-relative custom-col">
               <p class="title">ĐÁ GÀ</p>
-              <div class="info">
-                <div class="imglist jsOtherSlider slSlider">
-                  <p class="itemSl"><img src="/img/home/game_other_003.png" alt=""></p>
-                  <p class="itemSl"><img src="/img/home/game_other_003.png" alt=""></p>
+              <v-carousel height="300" show-arrows="hover" cycle hide-delimiters>
+                <div class="" v-for="game in fishingCategories">
+                  <v-carousel-item :src="game.web_pic" cover>
+                  </v-carousel-item>
                 </div>
-                <p class="caption">Đá Gà DM</p><a href="#" class="button btnMain btn--green">CHƠI NGAY</a>
+              </v-carousel>
+              <div class="position-absolute top-100px right-30px">
+                <p class="caption ">Đá Gà DM</p>
               </div>
-            </div>
-            <div class="item">
+              <div class="position-absolute bottom-30px left-50  translate-center ">
+                <a href="#" class="button btnMain btn--green">CHƠI NGAY</a>
+              </div>
+            </v-col>
+            <v-col cols="2" class="position-relative custom-col">
               <p class="title">GAME BÀI</p>
-              <div class="info">
-                <div class="imglist">
-                  <p class="itemSl"><img src="/img/home/game_other_004.png" alt=""></p>
+              <v-carousel height="300" show-arrows="hover" cycle hide-delimiters>
+                <div class="" v-for="game in cardCategories">
+                  <v-carousel-item :src="game.web_pic" cover>
+                  </v-carousel-item>
                 </div>
-                <p class="caption">Game Bài JILI</p><a href="#" class="button btnMain btn--green">CHƠI NGAY</a>
+              </v-carousel>
+              <div class="position-absolute top-100px right-30px">
+                <p class="caption ">Đá Gà DM</p>
               </div>
-            </div>
-            <div class="item">
+              <div class="position-absolute bottom-30px left-50  translate-center ">
+                <a href="#" class="button btnMain btn--green">CHƠI NGAY</a>
+              </div>
+            </v-col>
+            <v-col cols="2" class="position-relative custom-col">
               <p class="title">XỔ SỐ</p>
-              <div class="info">
-                <div class="imglist">
-                  <p class="itemSl"><img src="/img/home/game_other_005.png" alt=""></p>
+              <v-carousel height="300" show-arrows="hover" cycle hide-delimiters>
+                <div class="" v-for="game in cardCategories">
+                  <v-carousel-item :src="game.web_pic" cover>
+                  </v-carousel-item>
                 </div>
-                <p class="caption">Xổ Số 3 Miền</p><a href="#" class="button btnMain btn--green">CHƠI NGAY</a>
+              </v-carousel>
+              <div class="position-absolute top-100px right-30px">
+                <p class="caption ">Đá Gà DM</p>
               </div>
-            </div>
-          </div>
-        </div>
+              <div class="position-absolute bottom-30px left-50  translate-center ">
+                <a href="#" class="button btnMain btn--green">CHƠI NGAY</a>
+              </div>
+            </v-col>
+
+          </v-row>
+        </v-container>
       </section>
       <section id="khuyenmai">
         <h2 class="ttl"><img src="/img/home/ttl_khuyenmai.png" alt="HOT GAME"></h2>
         <div class="bnrList">
-          <div class="bnrList_inner jsBnrSlider slSlider">
-            <div class="item"><img src="/img/home/bnr_khuyenmai.png" alt=""></div>
-            <div class="item"><img src="/img/home/bnr_khuyenmai.png" alt=""></div>
-            <div class="item"><img src="/img/home/bnr_khuyenmai.png" alt=""></div>
-            <div class="item"><img src="/img/home/bnr_khuyenmai.png" alt=""></div>
+          <div data-v-166fe82e="" class="gameList jsCasinoSlider slSlider">
+            <v-slide-group show-arrows>
+              <v-slide-group-item v-for="promotion in promotions">
+                <div class="item"><img :src="promotion.cover_image" alt=""></div>
+
+              </v-slide-group-item>
+            </v-slide-group>
           </div>
+
         </div>
         <div class="wrap">
           <div class="txtBox">
@@ -294,6 +260,9 @@ import { useFishingStore } from '~/store/fishing';
 import { useLotteryStore } from '~/store/lottery';
 import { DEVICE_TYPE, LANG } from '~/types/common';
 import { useHotStore } from '~/store/hot';
+import { usePromotionStore } from '~/store/promotion';
+import { usePromotion } from '~/features/promotion/promotion.model';
+
 
 const splitTag = (text: string): Array<string> => text.split(',')
 
@@ -315,6 +284,9 @@ const lotteryStore = useLotteryStore()
 const { lotteries } = storeToRefs(lotteryStore)
 const { handleClickGame } = useCommon()
 
+const promotionStore = usePromotionStore()
+promotionStore.fetchPromotions({ lang: configStore.lang })
+const { promotions, selectedPromotionId } = usePromotion()
 const {
   // State
   banners,
