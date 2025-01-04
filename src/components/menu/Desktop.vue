@@ -1,5 +1,5 @@
 <template>
-  <ul class="nav">
+  <!-- <ul class="nav">
     <template v-for="category in categories">
       <li>
         <NuxtLink :to="category.href" class="category">
@@ -22,32 +22,45 @@
                 </div>
               </a>
             </template>
-          </div>
-        </div>
+</div>
+</div>
+</li>
+</template>
+</ul>
+<div class="kf-box">
+  <NuxtLink to="/promotion" class="kf-item promotions">
+    <img src="/image/desktop/header/khuyen-mai.png">
+    <p>Khuyến mãi</p>
+  </NuxtLink>
+  <button class="kf-item" @click="handleOpenChat">
+    <img src="/image/desktop/header/ho-tro.png">
+    <p>Hỗ Trợ</p>
+  </button>
+</div> -->
+  <nav class="hnav">
+    <ul class="flexCenter">
+      <li class="active home">
+        <a href="#"><img src="/img/header/hnav_001.png" alt="" />Trang
+          Chủ</a>
       </li>
-    </template>
-  </ul>
-  <div class="kf-box">
-    <NuxtLink to="/promotion" class="kf-item promotions">
-      <img src="/image/desktop/header/khuyen-mai.png">
-      <p>Khuyến mãi</p>
-    </NuxtLink>
-    <button class="kf-item" @click="handleOpenChat">
-      <img src="/image/desktop/header/ho-tro.png">
-      <p>Hỗ Trợ</p>
-    </button>
-  </div>
+      <div class="" v-for="category in categories">
+        <li>
+          <NuxtLink :to="category.href"> <img src=" /img/header/hnav_002.png" alt="" />{{ category.title }}</NuxtLink>
+        </li>
+      </div>
+    </ul>
+  </nav>
 </template>
 
 <script setup lang="ts">
-  defineProps<{
-    categories: Array<{
-      title: string,
-      href: string,
-      gameType: number,
-      data: Array<any>
-    }>
-  }>()
+defineProps<{
+  categories: Array<{
+    title: string,
+    href: string,
+    gameType: number,
+    data: Array<any>
+  }>
+}>()
 
-  const { handleClickGame, handleOpenChat } = useCommon()
+const { handleClickGame, handleOpenChat } = useCommon()
 </script>

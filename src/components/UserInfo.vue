@@ -1,5 +1,5 @@
 <template>
-  <v-menu>
+  <!-- <v-menu>
     <template v-slot:activator="{ props }">
       <v-chip v-bind="props" link pill variant="tonal" append-icon="mdi-menu-down" class="user-chip">
         <v-avatar start>
@@ -12,56 +12,86 @@
         </div>
       </v-chip>
     </template>
-    <v-list>
-      <v-list-item>
-        <template #title>
+<v-list>
+  <v-list-item>
+    <template #title>
           <div class="flex cursor-pointer">
             <img src="/image/desktop/header/icon01.png" width="22" />
             <span style="line-height: normal; margin-left: 4px;">Số dư ví</span>
           </div>
         </template>
-        <template #subtitle>
+    <template #subtitle>
           <span style="margin-left: 24px; font-size: 20px; color: #4b88d6;">
             {{ formatedMoney }}
           </span>
         </template>
-      </v-list-item>
-      <v-divider></v-divider>
-      <v-list-item>
-        <template #title>
+  </v-list-item>
+  <v-divider></v-divider>
+  <v-list-item>
+    <template #title>
           <NuxtLink to="/user/deposit" class="flex cursor-pointer text-black">
             <img src="/image/desktop/header/icon02.png" width="20" />
             <span style="line-height: normal; margin-left: 4px;">Nạp tiền</span>
           </NuxtLink>
         </template>
-      </v-list-item>
-      <v-list-item rounded="xl">
-        <template #title>
+  </v-list-item>
+  <v-list-item rounded="xl">
+    <template #title>
           <NuxtLink to="/user/withdraw" class="flex cursor-pointer text-black">
             <img src="/image/desktop/header/icon03.png" width="20" />
             <span style="line-height: normal; margin-left: 4px;">Rút tiền</span>
           </NuxtLink>
         </template>
-      </v-list-item>
-      <v-divider></v-divider>
-      <v-list-item>
-        <template #title>
+  </v-list-item>
+  <v-divider></v-divider>
+  <v-list-item>
+    <template #title>
           <NuxtLink to="/user/info" class="flex cursor-pointer text-black">
             <img src="/image/desktop/header/icon04.png" width="22" />
             <span style="line-height: normal; margin-left: 4px;">Thông tin cá nhân</span>
           </NuxtLink>
         </template>
-      </v-list-item>
-      <v-list-item @click="$emit('signout')">
-        <template #title>
+  </v-list-item>
+  <v-list-item @click="$emit('signout')">
+    <template #title>
           <div class="flex cursor-pointer">
             <img src="/image/desktop/header/icon05.png" width="22" />
             <span style="line-height: normal; margin-left: 4px;">Đăng xuất</span>
           </div>
         </template>
-      </v-list-item>
-    </v-list>
-  </v-menu>
+  </v-list-item>
+</v-list>
+</v-menu> -->
+  <ul class="flexCenter">
+    <li>
+      <div class="userName">
+        <small>Xin chào!</small><span class="name">{{ userInfo.name }}</span>
+      </div>
+    </li>
+    <li>
+      <div class="userAmount">{{ formatedMoney }}</div>
+    </li>
+    <li>
+      <div class="userNotify">
+        <i><img src="/img/icon_bell.svg" alt="" /></i><span class="number">1</span>
+      </div>
+    </li>
+    <li>
+      <NuxtLink to="/user/withdraw" class="btnMain btnUserNap btn--yellow">
+        RÚT TIỀN
+      </NuxtLink>
+    </li>
+    <li>
+      <NuxtLink to="/user/deposit" class="btnMain btnUserRut btn--green">
+        NẠP TIỀN
+      </NuxtLink>
+    </li>
+    <li>
+      <button class="btnMain btnLogout" @click="$emit('signout')">
+        <img src="/img/icon_logout.svg" alt="" />Đăng Xuất
+      </button>
+    </li>
+  </ul>
 </template>
 <script setup lang="ts">
 import type { TMe } from '~/types/auth';

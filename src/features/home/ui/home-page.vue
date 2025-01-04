@@ -213,16 +213,17 @@
     </div>
     <!-- for SP -->
     <div class="sp">
-      <div class="infoUSerSP">
-        <div class="infoUSerSP_inner">
+      <!-- <div class="infoUSerSP">
+       <div class="infoUSerSP_inner">
           <div class="userBox1">
             <div class="userName"><span class="vip">VIP<span>1</span></span>Usename002</div>
             <p class="userAmount">234,000,000 VNĐ</p>
           </div>
           <div class="userBtn"><button class="btnMain btnUserNap btn--yellow">RÚT TIỀN</button></div>
           <div class="userBtn"><button class="btnMain btnUserRut btn--green">NẠP TIỀN</button></div>
-        </div>
-      </div>
+        </div> 
+      </div> -->
+      <InfoMobile />
       <section id="hotgameSP">
         <h2 class="ttl"><img src="/img/home/ttl_hotgame_sp.png" alt="HOT GAME"></h2>
         <div class="gameList">
@@ -262,6 +263,7 @@ import { DEVICE_TYPE, LANG } from '~/types/common';
 import { useHotStore } from '~/store/hot';
 import { usePromotionStore } from '~/store/promotion';
 import { usePromotion } from '~/features/promotion/promotion.model';
+import InfoMobile from '~/components/header/InfoMobile.vue';
 
 
 const splitTag = (text: string): Array<string> => text.split(',')
